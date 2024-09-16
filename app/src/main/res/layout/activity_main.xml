@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="Wordle"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+
+    <!-- First Guess and Check (Initially hidden) -->
+    <TextView
+        android:id="@+id/enter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="Guess #1"
+        />
+
+    <TextView
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <!-- Second Guess and Check (Initially hidden) -->
+    <EditText
+        android:id="@+id/enter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <!-- Third Guess and Check (Initially hidden) -->
+    <EditText
+        android:id="@+id/enter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <!-- Answer TextView (Initially hidden) -->
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="answer"
+        android:textColor="#808080"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+    <!-- Bottom section with EditText and Button aligned -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- EditText at the bottom left -->
+        <EditText
+            android:id="@+id/bottomEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Enter 4 letter guess here"
+            android:textSize="20dp" />
+
+        <!-- Restart Button -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="RESTART" />
+    </LinearLayout>
+
+</LinearLayout>
